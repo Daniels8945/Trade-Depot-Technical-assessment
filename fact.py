@@ -1,4 +1,3 @@
-
 def _fac(n: int) -> int:
     """ Takes a positive initiger as input
         Calcultate and return the factorial of the given intiger """
