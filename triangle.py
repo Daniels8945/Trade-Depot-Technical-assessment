@@ -9,7 +9,7 @@ def _tri(n: list[int]) -> int:
         than or equal to the sum of the other two sides), return "Not a triangle".
     """
 
-    bgst_num = n[0]
+    num = n[0]
     for i in (n):
         if i == 2 or i ==  1:
             print("Not a triangle")
@@ -17,13 +17,13 @@ def _tri(n: list[int]) -> int:
         elif i == 3:
             print("Equilateral")
             return
-        elif i > bgst_num:
-            bgst_num = i
-            if bgst_num == 6:
+        elif i > num:
+            num = i
+            if num == 6:
                 print("Isosceles")
-            elif bgst_num  == 5:
+            elif num  == 5:
                 print("Scalene")
             else:
                 print("Not a triangle")
            
-_tri(n=[4, 4, 5])
+_tri(n=[4, 4, 6])
