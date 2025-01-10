@@ -5,4 +5,4 @@ def _fac(n: int) -> int:
     for i in range(1, n+1):
         f *= i
         print("{:d}".format(f))     
-_fac(7)
+_fac(n=int(input("Enter a positive number: ")))
